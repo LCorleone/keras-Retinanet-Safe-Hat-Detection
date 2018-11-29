@@ -73,7 +73,7 @@ for img in os.listdir('../DATASET/safe_hat/output'):
     # else:
     for box, score, label in zip(boxes[0], scores[0], labels[0]):
         # scores are sorted so we can break
-        if score < 0.75:
+        if score < 0.95:
             break
 
         b = box.astype(int)
